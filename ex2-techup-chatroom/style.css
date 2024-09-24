@@ -1,1 +1,79 @@
-/* Start coding here */
+h1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    color: white;
+    background-color: grey;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.message-box {
+    display: flex;
+}
+
+.msg-mine {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 120px;
+    justify-content: flex-start;
+    margin-left: auto;
+    background-color: greenyellow;
+}
+
+.event {
+    position: relative;
+    background-color: grey;
+    z-index: 1;
+}
+
+.x {
+    position: absolute;
+    font-size: 12px;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #696969;
+    color: white;
+}
+
+.message-box::after {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    border-top-color: greenyellow;
+    bottom: 0;
+    top: 6%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+.msg-others {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+    min-width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: grey;
+}
